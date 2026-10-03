@@ -1,4 +1,31 @@
-## Foundations of Comparative Literature
+---
+title: Hocbigg - Comparative Literature
+description: Path to a free self-taught education in Comparative Literature.
+---
+
+## Introduction
+
+Comparative literature investigates literature across linguistic, national, temporal, and disciplinary boundaries. Unlike traditional literature programs focused on a single language or national canon (such as English, French, or Russian), comparative literature explores how stories, poetic forms, and philosophical ideas travel across cultures, how meaning shifts in translation, and how cultural power shapes what gets read and remembered. Studying this discipline equips you with both broad global literacy and sharp critical tools, training you to read texts not as isolated artifacts, but as participants in an ongoing, interconnected world dialogue.
+
+This curriculum is built for independent, self-directed learners with no prior formal background in literary criticism, literary theory, or foreign language study. While professional comparatists often work in multiple languages, this foundational track approaches primary texts through dependable English translations alongside critical studies of translation itself. You do not need previous coursework in the humanities — only curiosity, close attention to text, and a willingness to encounter unfamiliar cultural traditions on their own terms.
+
+### How to Navigate the Curriculum
+
+The curriculum is structured into five core subjects arranged in a logical sequence from theoretical foundations to transnational text studies:
+
+- **Start with the analytical toolset:** Begin with *Foundations of Comparative Literature* and *Literary Theory and Criticism*. These two subjects introduce the discipline's defining debates (such as Goethe's concept of world literature, circulation models, and translation theory) and supply the twentieth-century critical vocabulary (formalism, structuralism, poststructuralism, and postcolonial critique) necessary for comparative close reading.
+- **Engage the foundational canons:** With critical methods established, move to *Classical and Western Literary Traditions* and *World Literatures and Global Perspectives*. These two subjects can be studied either sequentially or side by side. They pair early Western epic and dramatic models with foundational traditions from Mesopotamia, East Asia, South Asia, and the Middle East, demonstrating how literary forms cross cultural borders over millennia.
+- **Synthesize with the modern and contemporary:** Finish with *Modern and Contemporary Literature*, which examines global modernism, anti-colonial resistance, and contemporary transnational writing, showing how modern writers adapt, critique, or dismantle older canonical models.
+
+### Scope
+
+This page covers only the core undergraduate foundation: the baseline theories, methods, and comparative surveys that every student in the discipline needs before specializing. It intentionally avoids narrow regional electives or single-author seminars in favor of broad, cross-cultural competence.
+
+Once you have completed this foundational core, you can pursue specialized areas of study such as digital text analysis, the sociology of the book trade, or decolonial theory in [Advanced Topics](advanced_topics.md).
+
+## Curriculum
+
+### Foundations of Comparative Literature
 
 This subject introduces the history, scope, and methodology of comparative literature, examining how the discipline differentiates itself from national literary traditions through debates on influence, reception, translation, and world circulation.
 
@@ -10,7 +37,7 @@ This subject introduces the history, scope, and methodology of comparative liter
 
 [The Princeton Sourcebook in Comparative Literature (eds. David Damrosch, Natalie Melas, Mbongiseni Buthelezi, Princeton University Press)](https://books.google.com/books?isbn=9780691132853) - The primary-text companion reader compiling the foundational manifestos and historical debates from Goethe and Herder through Auerbach, Said, and Moretti.
 
-## Literary Theory and Criticism
+### Literary Theory and Criticism
 
 This subject examines the major twentieth-century critical schools and theoretical frameworks—including Russian formalism, structuralism, poststructuralism, psychoanalysis, Marxism, feminism, and postcolonial theory—that provide the interpretive tools for comparative literary analysis.
 
@@ -20,7 +47,7 @@ This subject examines the major twentieth-century critical schools and theoretic
 
 [The Norton Anthology of Theory and Criticism, 3rd ed. (eds. McGowan, Williams, Finke, W. W. Norton)](https://books.google.com/books?isbn=9780393602951) - The comprehensive companion anthology of primary critical texts from antiquity to contemporary theory, designed to be read alongside Fry's lectures.
 
-## Classical and Western Literary Traditions
+### Classical and Western Literary Traditions
 
 This subject explores the foundational epic, dramatic, and narrative roots of the Western tradition and their comparative reception, tracing representations of reality and poetic models from ancient Greece to the medieval European synthesis.
 
@@ -36,7 +63,7 @@ This subject explores the foundational epic, dramatic, and narrative roots of th
 
 [Foundations of Western Culture: Homer to Dante (MIT OpenCourseWare)](https://ocw.mit.edu/courses/21l-001-foundations-of-western-culture-homer-to-dante-fall-2008) - An alternative, syllabus-driven survey providing comparative reading schedules, essay assignments, and close-reading guides spanning the ancient and medieval Western canon.
 
-## World Literatures and Global Perspectives
+### World Literatures and Global Perspectives
 
 This subject investigates literary circulation, canon formation, and translation across non-Western and transnational traditions, exploring how texts travel across linguistic borders and reshape global culture.
 
@@ -54,7 +81,7 @@ This subject investigates literary circulation, canon formation, and translation
 
 [Foundations of World Culture II: World Literatures and Texts (MIT OpenCourseWare)](https://ocw.mit.edu/courses/21l-002x-foundations-of-world-culture-ii-world-literatures-and-texts-spring-2012) - A syllabus-based seminar framework that pairs Western and non-Western literary texts across early modernity to recent history, offering directed writing prompts.
 
-## Modern and Contemporary Literature
+### Modern and Contemporary Literature
 
 This subject addresses twentieth- and twenty-first-century global developments—including modernism, the postcolonial novel, and diaspora aesthetics—through cross-cultural and comparative critical lenses.
 
