@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Comparative Literature: Advanced Specialization Tracks</title>
+  <meta name="description" content="Comparative Literature: Advanced Specialization Tracks curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/comparative-literature/advanced_topics.html">
+  <meta property="og:title" content="Comparative Literature: Advanced Specialization Tracks">
+  <meta property="og:description" content="Comparative Literature: Advanced Specialization Tracks curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/comparative-literature/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/comparative-literature/">Comparative Literature</a></li>
+      <li><a href="/comparative-literature/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="https://github.com/hocbigg/comparative-literature" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="comparative-literature-advanced-specialization-tracks">Comparative Literature: Advanced Specialization Tracks</h1>
+<p>Advanced comparative literature moves beyond foundational surveys of literary theory and world canons to explore specialized methodologies, interdisciplinary intersections, and material conditions of literary circulation. Self-directed learners should select one or two tracks aligned with their intellectual goals rather than attempting to complete every specialization:</p>
+<ul>
+<li><strong>World Literature and the Sociology of Literature:</strong> Investigates the institutional, economic, and political systems that govern global literary circulation, cultural capital, and debates over untranslatability.</li>
+<li><strong>Decolonial Poetics and Subaltern Studies:</strong> Explores advanced frameworks of coloniality, subaltern representation, Caribbean creolization, and Global South cultural resistance beyond introductory postcolonial theory.</li>
+<li><strong>Advanced Translation Studies:</strong> Focuses on the ethics, descriptive systems, ideological tensions, and political economies of translation across linguistic borders.</li>
+<li><strong>Computational Literary Studies and Digital Humanities:</strong> Examines quantitative text analysis, macroanalysis, network modeling, and corpus-level methods for studying literary history at scale.</li>
+<li><strong>Ecocriticism and the Environmental Humanities:</strong> Analyzes literature's engagement with planetary crisis, slow violence, eco-cosmopolitanism, and the collapse of nature-culture boundaries.</li>
+</ul>
+<h2 id="world-literature-and-the-sociology-of-literature">World Literature and the Sociology of Literature</h2>
+<p>This track examines the material institutions, unequal power dynamics, and market forces governing global literary circulation, cultural prestige, and debates on untranslatability.</p>
+<p>Distant Reading and World-Systems: <a href="https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduates/modules/fulllist/special/globalnovel/moretti-conjectures-nlr_1.pdf" target="_blank" rel="noopener noreferrer">Conjectures on World Literature (Franco Moretti, New Left Review / University of Warwick)</a> - The foundational open-access essay applying Wallerstein's world-systems theory to comparative literature, arguing that world literature is a unified but profoundly unequal planetary system.</p>
+<p>The Global Literary Marketplace: <a href="https://books.google.com/books?isbn=9780674010215" target="_blank" rel="noopener noreferrer">The World Republic of Letters (Pascale Casanova, Harvard University Press)</a> - A Bourdieu-inspired model demonstrating how metropolitan centers like Paris monopolize literary capital and consecrate peripheral writers into world visibility.</p>
+<p>Sociology of the Cultural Field: <a href="https://books.google.com/books?isbn=9780231082877" target="_blank" rel="noopener noreferrer">The Field of Cultural Production: Essays on Art and Literature (Pierre Bourdieu, Columbia University Press)</a> - The definitive sociological framework detailing how literary fields operate through struggles over autonomy, symbolic capital, and institutional gatekeeping.</p>
+<p>The Politics of Untranslatability: <a href="https://books.google.com/books?isbn=9781844679706" target="_blank" rel="noopener noreferrer">Against World Literature: On the Politics of Untranslatability (Emily Apter, Verso)</a> - A vital critical challenge to the frictionless commodification of world literature, arguing for the untranslatable as a necessary site of linguistic and political resistance.</p>
+<p>Disciplinary Reimagining and Area Studies: <a href="https://books.google.com/books?isbn=9780231129442" target="_blank" rel="noopener noreferrer">Death of a Discipline (Gayatri Chakravorty Spivak, Columbia University Press)</a> - Spivak's influential manifesto proposing to rescue comparative literature from Eurocentric hegemony by merging its close-reading methods with regional languages and area studies.</p>
+<h2 id="decolonial-poetics-and-subaltern-studies">Decolonial Poetics and Subaltern Studies</h2>
+<p>This track explores advanced frameworks of coloniality, subaltern representation, Caribbean creolization, and Global South cultural resistance beyond introductory postcolonial theory.</p>
+<p>Subaltern Historiography and Representation: <a href="https://monoskop.org/images/4/45/Spivak_Gayatri_1988_Can_the_Subaltern_Speak.pdf" target="_blank" rel="noopener noreferrer">Can the Subaltern Speak? (Gayatri Chakravorty Spivak, Marxism and the Interpretation of Culture / Monoskop)</a> - The seminal open-access essay examining the epistemic violence of imperial archives and the ideological traps of representing marginalized subaltern voices.</p>
+<p>Caribbean Poetics and Opacity: <a href="https://books.google.com/books?isbn=9780472064298" target="_blank" rel="noopener noreferrer">Poetics of Relation (Édouard Glissant, University of Michigan Press)</a> - Articulates a foundational Global South comparative poetics based on the rhizome, creolization, and the "right to opacity" against Western universalist comprehension.</p>
+<p>Decoloniality and Epistemic Delinking: <a href="https://books.google.com/books?isbn=9780822350781" target="_blank" rel="noopener noreferrer">The Darker Side of Western Modernity: Global Futures, Decolonial Options (Walter D. Mignolo, Duke University Press)</a> - Differentiates decoloniality from postcolonialism by tracing the colonial matrix of power back to 1492 and advancing epistemic disobedience against Eurocentric knowledge systems.</p>
+<p>Colonial Ambivalence and Hybridity: <a href="https://books.google.com/books?isbn=9780415336390" target="_blank" rel="noopener noreferrer">The Location of Culture (Homi K. Bhabha, Routledge)</a> - Develops the theoretical frameworks of the "third space," mimicry, and hybridity to demonstrate how colonial authority fractures from within its own discourse.</p>
+<p>Necropolitics and Sovereign Violence: <a href="https://books.google.com/books?isbn=9781478006510" target="_blank" rel="noopener noreferrer">Necropolitics (Achille Mbembe, Duke University Press)</a> - Extends postcolonial critique into contemporary geopolitics by analyzing how sovereignty operates through the subjugation of life to the power of death in colonial and postcolonial territories.</p>
+<h2 id="advanced-translation-studies">Advanced Translation Studies</h2>
+<p>This track examines the ideological, ethical, and sociological dimensions of translation, exploring how linguistic mediation reshapes literary canons and encodes asymmetrical power relations.</p>
+<p>The Politics of Domestication: <a href="https://books.google.com/books?isbn=9780415394550" target="_blank" rel="noopener noreferrer">The Translator's Invisibility: A History of Translation (Lawrence Venuti, Routledge)</a> - The foundational critique of fluent, domesticating translation strategies in Anglo-American publishing that systematically erase cultural difference.</p>
+<p>Contemporary Translation Paradigms: <a href="https://books.google.com/books?isbn=9781032457512" target="_blank" rel="noopener noreferrer">Exploring Translation Theories, 3rd ed. (Anthony Pym, Routledge)</a> - An authoritative advanced overview of equivalence, purpose (skopos), description, and uncertainty, accompanied by the author's open lecture videos on YouTube (@AnthonyPym).</p>
+<p>Descriptive Translation Studies and Norms: <a href="https://books.google.com/books?isbn=9789027224484" target="_blank" rel="noopener noreferrer">Descriptive Translation Studies – and beyond, rev. ed. (Gideon Toury, John Benjamins)</a> - The foundational text of empirical translation studies, shifting focus from prescriptive fidelity rules to the cultural and systemic norms governing target-text production.</p>
+<p>Translation and the Global Economy: <a href="https://books.google.com/books?isbn=9780415270649" target="_blank" rel="noopener noreferrer">Translation and Globalization (Michael Cronin, Routledge)</a> - Investigates how translation functions within globalized networks, examining the commercialization of language, technological mediation, and the survival of minority cultures.</p>
+<p>Postcolonial Translation: <a href="https://books.google.com/books?isbn=9780520074514" target="_blank" rel="noopener noreferrer">Siting Translation: History, Post-Structuralism, and the Colonial Context (Tejaswini Niranjana, University of California Press)</a> - Analyzes how translation served as an instrument of colonial subjugation and how retranslating colonial archives can disrupt imperial narratives.</p>
+<h2 id="computational-literary-studies-and-digital-humanities">Computational Literary Studies and Digital Humanities</h2>
+<p>This track introduces quantitative, algorithmic, and computational methodologies for analyzing literary corpora, mapping historical patterns, and interrogating literary change across large scales.</p>
+<p>Digital Humanities Foundations: <a href="https://www.edx.org/learn/humanities/harvard-university-introduction-to-digital-humanities" target="_blank" rel="noopener noreferrer">Introduction to Digital Humanities (HarvardX on edX)</a> - A free audit-mode course teaching fundamental computational workflows, data extraction, and visual text analysis tailored for humanities scholarship.</p>
+<p>Macroanalysis and Corpus-Level History: <a href="https://books.google.com/books?isbn=9780252037528" target="_blank" rel="noopener noreferrer">Macroanalysis: Digital Methods and Literary History (Matthew L. Jockers, University of Illinois Press)</a> - A pioneering demonstration of text mining across thousands of novels to track stylistic, thematic, and structural evolutions invisible to close reading alone.</p>
+<p>Machine Learning and Literary Evidence: <a href="https://books.google.com/books?isbn=9780226612836" target="_blank" rel="noopener noreferrer">Distant Horizons: Digital Evidence and Literary Change (Ted Underwood, University of Chicago Press)</a> - Demonstrates how machine learning, statistical classification, and predictive models expose long-term historical shifts in genre, characterization, and prestige.</p>
+<p>Practical Corpus Analytics: <a href="https://programminghistorian.org/" target="_blank" rel="noopener noreferrer">The Programming Historian (Open-Access Peer-Reviewed Tutorials)</a> - A comprehensive collection of open-access, peer-reviewed tutorials teaching Python-based text processing, web scraping, sentiment analysis, and topic modeling for literary analysis.</p>
+<p>Experimental Computational Criticism: <a href="https://litlab.stanford.edu/pamphlets/" target="_blank" rel="noopener noreferrer">Stanford Literary Lab Pamphlets (Stanford University)</a> - An open series of cutting-edge research pamphlets applying network theory, operationalized measurement, and large-scale quantitative formalism to literary history.</p>
+<h2 id="ecocriticism-and-the-environmental-humanities">Ecocriticism and the Environmental Humanities</h2>
+<p>This track investigates how literature registers environmental crisis, ecological catastrophe, and more-than-human agency, bridging literary form with planetary systems.</p>
+<p>Environmental Humanities Foundations: <a href="https://www.futurelearn.com/courses/remaking-nature" target="_blank" rel="noopener noreferrer">Environmental Humanities: Remaking Nature (UNSW Sydney on FutureLearn)</a> - A free university MOOC introducing the core concepts of environmental philosophy, ecological cultural studies, and interdisciplinary approaches to biodiversity loss.</p>
+<p>First-Wave Ecocriticism and Place: <a href="https://books.google.com/books?isbn=9780674258624" target="_blank" rel="noopener noreferrer">The Environmental Imagination: Thoreau, Nature Writing, and the Formation of American Culture (Lawrence Buell, Harvard University Press)</a> - The foundational monograph that established ecocritical methodology, defining the aesthetic criteria and environmental ethics of place-based literature.</p>
+<p>Slow Violence and Environmental Justice: <a href="https://books.google.com/books?isbn=9780674049307" target="_blank" rel="noopener noreferrer">Slow Violence and the Environmentalism of the Poor (Rob Nixon, Harvard University Press)</a> - A landmark postcolonial environmental study analyzing how attritional, out-of-sight catastrophes in the Global South challenge conventional narrative representations of crisis.</p>
+<p>Eco-Cosmopolitanism and the Global Imagination: <a href="https://books.google.com/books?isbn=9780195335644" target="_blank" rel="noopener noreferrer">Sense of Place and Sense of Planet: The Environmental Imagination of the Global (Ursula K. Heise, Oxford University Press)</a> - Demonstrates how comparative literary analysis must shift from localized bioregionalism to an "eco-cosmopolitan" planetary awareness that accounts for global risk networks.</p>
+<p>Narrative Form and the Climate Unthinkable: <a href="https://books.google.com/books?isbn=9780226323039" target="_blank" rel="noopener noreferrer">The Great Derangement: Climate Change and the Unthinkable (Amitav Ghosh, University of Chicago Press)</a> - A field-defining critique analyzing why the bourgeois realist novel struggles to depict planetary climate rupture, arguing for radical reformulations of narrative form and historical imagination.</p>
+    </article>
+  </main>
+
+</body>
+</html>

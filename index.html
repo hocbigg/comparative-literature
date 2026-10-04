@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Hocbigg - Comparative Literature</title>
+  <meta name="description" content="Path to a free self-taught education in Comparative Literature.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/comparative-literature/">
+  <meta property="og:title" content="Hocbigg - Comparative Literature">
+  <meta property="og:description" content="Path to a free self-taught education in Comparative Literature.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/comparative-literature/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/comparative-literature/">Comparative Literature</a></li>
+      <li><a href="/comparative-literature/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="https://github.com/hocbigg/comparative-literature" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+<header class="page-header">
+  <img src="/images/logo.png" alt="Hocbigg logo">
+  <h1>Hocbigg - Comparative Literature</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Comparative Literature.</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-03">2026-10-03</time></small></p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>Comparative literature investigates literature across linguistic, national, temporal, and disciplinary boundaries. Unlike traditional literature programs focused on a single language or national canon (such as English, French, or Russian), comparative literature explores how stories, poetic forms, and philosophical ideas travel across cultures, how meaning shifts in translation, and how cultural power shapes what gets read and remembered. Studying this discipline equips you with both broad global literacy and sharp critical tools, training you to read texts not as isolated artifacts, but as participants in an ongoing, interconnected world dialogue.</p>
+<p>This curriculum is built for independent, self-directed learners with no prior formal background in literary criticism, literary theory, or foreign language study. While professional comparatists often work in multiple languages, this foundational track approaches primary texts through dependable English translations alongside critical studies of translation itself. You do not need previous coursework in the humanities — only curiosity, close attention to text, and a willingness to encounter unfamiliar cultural traditions on their own terms.</p>
+<h3 id="how-to-navigate-the-curriculum">How to Navigate the Curriculum</h3>
+<p>The curriculum is structured into five core subjects arranged in a logical sequence from theoretical foundations to transnational text studies:</p>
+<ul>
+<li><strong>Start with the analytical toolset:</strong> Begin with <em>Foundations of Comparative Literature</em> and <em>Literary Theory and Criticism</em>. These two subjects introduce the discipline's defining debates (such as Goethe's concept of world literature, circulation models, and translation theory) and supply the twentieth-century critical vocabulary (formalism, structuralism, poststructuralism, and postcolonial critique) necessary for comparative close reading.</li>
+<li><strong>Engage the foundational canons:</strong> With critical methods established, move to <em>Classical and Western Literary Traditions</em> and <em>World Literatures and Global Perspectives</em>. These two subjects can be studied either sequentially or side by side. They pair early Western epic and dramatic models with foundational traditions from Mesopotamia, East Asia, South Asia, and the Middle East, demonstrating how literary forms cross cultural borders over millennia.</li>
+<li><strong>Synthesize with the modern and contemporary:</strong> Finish with <em>Modern and Contemporary Literature</em>, which examines global modernism, anti-colonial resistance, and contemporary transnational writing, showing how modern writers adapt, critique, or dismantle older canonical models.</li>
+</ul>
+<h3 id="scope">Scope</h3>
+<p>This page covers only the core undergraduate foundation: the baseline theories, methods, and comparative surveys that every student in the discipline needs before specializing. It intentionally avoids narrow regional electives or single-author seminars in favor of broad, cross-cultural competence.</p>
+<p>Once you have completed this foundational core, you can pursue specialized areas of study such as digital text analysis, the sociology of the book trade, or decolonial theory in <a href="advanced_topics.html">Advanced Topics</a>.</p>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-comparative-literature">Foundations of Comparative Literature</h3>
+<p>This subject introduces the history, scope, and methodology of comparative literature, examining how the discipline differentiates itself from national literary traditions through debates on influence, reception, translation, and world circulation.</p>
+<p><a href="https://books.google.com/books?isbn=9780198807278" target="_blank" rel="noopener noreferrer">Comparative Literature: A Very Short Introduction (Ben Hutchinson, Oxford University Press)</a> - Read this concise overview first to gain an immediate roadmap of the discipline's historical development, institutional shifts, and central concepts.</p>
+<p><a href="https://books.google.com/books?isbn=9780631167051" target="_blank" rel="noopener noreferrer">Comparative Literature: A Critical Introduction (Susan Bassnett, Wiley-Blackwell)</a> - A complementary critical history that analyzes the field's twentieth-century methodological crises and its foundational turn toward cultural and translation studies.</p>
+<p><a href="https://books.google.com/books?isbn=9780691049861" target="_blank" rel="noopener noreferrer">What Is World Literature? (David Damrosch, Princeton University Press)</a> - Builds directly on introductory histories by articulating the modern circulation model that defines how works enter, circulate, and gain meaning in a global comparative framework.</p>
+<p><a href="https://books.google.com/books?isbn=9780691132853" target="_blank" rel="noopener noreferrer">The Princeton Sourcebook in Comparative Literature (eds. David Damrosch, Natalie Melas, Mbongiseni Buthelezi, Princeton University Press)</a> - The primary-text companion reader compiling the foundational manifestos and historical debates from Goethe and Herder through Auerbach, Said, and Moretti.</p>
+<h3 id="literary-theory-and-criticism">Literary Theory and Criticism</h3>
+<p>This subject examines the major twentieth-century critical schools and theoretical frameworks—including Russian formalism, structuralism, poststructuralism, psychoanalysis, Marxism, feminism, and postcolonial theory—that provide the interpretive tools for comparative literary analysis.</p>
+<p><a href="https://books.google.com/books?isbn=9780199691340" target="_blank" rel="noopener noreferrer">Literary Theory: A Very Short Introduction (Jonathan Culler, Oxford University Press)</a> - An accessible, problem-oriented primer to read before beginning formal lectures, focusing on theoretical habits of mind rather than rigid schools of thought.</p>
+<p><a href="https://oyc.yale.edu/english/engl-300" target="_blank" rel="noopener noreferrer">Introduction to Theory of Literature (Paul Fry, Open Yale Courses)</a> - The primary instructional backbone of the subject, offering a complete 26-lecture video course that systematically works through the major twentieth-century critical movements with close textual analysis.</p>
+<p><a href="https://books.google.com/books?isbn=9780393602951" target="_blank" rel="noopener noreferrer">The Norton Anthology of Theory and Criticism, 3rd ed. (eds. McGowan, Williams, Finke, W. W. Norton)</a> - The comprehensive companion anthology of primary critical texts from antiquity to contemporary theory, designed to be read alongside Fry's lectures.</p>
+<h3 id="classical-and-western-literary-traditions">Classical and Western Literary Traditions</h3>
+<p>This subject explores the foundational epic, dramatic, and narrative roots of the Western tradition and their comparative reception, tracing representations of reality and poetic models from ancient Greece to the medieval European synthesis.</p>
+<p><a href="https://www.edx.org/learn/greek-heroes/harvard-university-the-ancient-greek-hero" target="_blank" rel="noopener noreferrer">The Ancient Greek Hero (Gregory Nagy, HarvardX on edX)</a> - A structured audit-mode lecture course examining Homeric epic, lyric song, and Greek tragedy through close textual analysis of hero cults and performance traditions.</p>
+<p><a href="https://www.gutenberg.org/ebooks/2199" target="_blank" rel="noopener noreferrer">The Iliad (Homer, tr. Samuel Butler, Project Gutenberg)</a> - A free, public-domain English prose translation of Homer's epic to read alongside Nagy's course; Alexander Pope's classic rhyming verse translation is also available on Project Gutenberg as an alternative poetic rendering.</p>
+<p><a href="https://www.gutenberg.org/ebooks/1727" target="_blank" rel="noopener noreferrer">The Odyssey (Homer, tr. Samuel Butler, Project Gutenberg)</a> - Butler's accessible public-domain prose translation of the Odyssey, serving as the direct companion primary text to Nagy's Homeric lectures.</p>
+<p><a href="https://books.google.com/books?isbn=9780691160221" target="_blank" rel="noopener noreferrer">Mimesis: The Representation of Reality in Western Literature (Erich Auerbach, Princeton University Press)</a> - The foundational masterwork of comparative literature, demonstrating close philological comparison by contrasting Homeric style with the Book of Genesis and tracing narrative realism through Dante, Shakespeare, and modern fiction.</p>
+<p><a href="https://oyc.yale.edu/italian-language-and-literature/ital-310" target="_blank" rel="noopener noreferrer">Dante in Translation (Giuseppe Mazzotta, Open Yale Courses)</a> - A complete 24-lecture video course examining the Divine Comedy and Dante's cultural synthesis of classical antiquity, Christian theology, and vernacular medieval poetry.</p>
+<p><a href="https://ocw.mit.edu/courses/21l-001-foundations-of-western-culture-homer-to-dante-fall-2008" target="_blank" rel="noopener noreferrer">Foundations of Western Culture: Homer to Dante (MIT OpenCourseWare)</a> - An alternative, syllabus-driven survey providing comparative reading schedules, essay assignments, and close-reading guides spanning the ancient and medieval Western canon.</p>
+<h3 id="world-literatures-and-global-perspectives">World Literatures and Global Perspectives</h3>
+<p>This subject investigates literary circulation, canon formation, and translation across non-Western and transnational traditions, exploring how texts travel across linguistic borders and reshape global culture.</p>
+<p><a href="https://www.edx.org/learn/literature/harvard-university-masterpieces-of-world-literature" target="_blank" rel="noopener noreferrer">Masterpieces of World Literature (HarvardX on edX)</a> - A comprehensive 12-week video course tracing how foundational texts from Mesopotamia, the Mediterranean, East Asia, the Middle East, and the Americas cross cultural boundaries to become world literature.</p>
+<p><a href="https://www.edx.org/learn/literature/harvard-university-ancient-masterpieces-of-world-literature" target="_blank" rel="noopener noreferrer">Ancient Masterpieces of World Literature (HarvardX on edX)</a> - A modular alternative covering only the first six weeks of the full Masterpieces course, ideal for learners seeking a focused study of ancient and medieval global texts like Gilgamesh, The 1001 Nights, and The Tale of Genji.</p>
+<p><a href="https://nptel.ac.in/courses/109106147" target="_blank" rel="noopener noreferrer">Introduction to World Literature (Prof. Merin Simi Raj, NPTEL / IIT Madras)</a> - An alternative full-length video course comprising 50 lectures that examines world literature from a South Asian institutional perspective, highlighting how localized texts engage global audiences.</p>
+<p><a href="https://books.google.com/books?isbn=9780393602814" target="_blank" rel="noopener noreferrer">The Norton Anthology of World Literature, 4th ed. (W. W. Norton)</a> - The canonical six-volume anthology of world literature in translation, serving as the essential primary-source reader to accompany the online lecture courses.</p>
+<p><a href="https://books.google.com/books?isbn=9780415506731" target="_blank" rel="noopener noreferrer">Translation Studies, 4th ed. (Susan Bassnett, Routledge)</a> - An indispensable introductory guide that explains the history, core debates, and theoretical concepts of translation—such as linguistic equivalence, untranslatability, and cultural mediation—before entering advanced criticism.</p>
+<p><a href="https://books.google.com/books?isbn=9780415613477" target="_blank" rel="noopener noreferrer">The Translation Studies Reader, 3rd ed. (ed. Lawrence Venuti, Routledge)</a> - Builds on Bassnett's introductory guide by collecting seminal historical and theoretical essays on translation by thinkers from Dryden and Schleiermacher to Walter Benjamin and Gayatri Spivak.</p>
+<p><a href="https://ocw.mit.edu/courses/21l-002x-foundations-of-world-culture-ii-world-literatures-and-texts-spring-2012" target="_blank" rel="noopener noreferrer">Foundations of World Culture II: World Literatures and Texts (MIT OpenCourseWare)</a> - A syllabus-based seminar framework that pairs Western and non-Western literary texts across early modernity to recent history, offering directed writing prompts.</p>
+<h3 id="modern-and-contemporary-literature">Modern and Contemporary Literature</h3>
+<p>This subject addresses twentieth- and twenty-first-century global developments—including modernism, the postcolonial novel, and diaspora aesthetics—through cross-cultural and comparative critical lenses.</p>
+<p><a href="https://www.edx.org/learn/literature/harvard-university-modern-masterpieces-of-world-literature" target="_blank" rel="noopener noreferrer">Modern Masterpieces of World Literature (HarvardX on edX)</a> - The primary global literature video course for this period (also serving as the second modular half of HarvardX's full World Literature survey), analyzing works by Voltaire, Lu Xun, Borges, Soyinka, Rushdie, and Pamuk.</p>
+<p><a href="https://nptel.ac.in/courses/109104116" target="_blank" rel="noopener noreferrer">Postcolonial Literature (Prof. Sayan Chattopadhyay, NPTEL / IIT Kanpur)</a> - A 20-lecture video series introducing the critical terms and literary texts of the postcolonial field, pairing African, South Asian, and Caribbean texts against colonial discourse.</p>
+<p><a href="https://books.google.com/books?isbn=9780415280204" target="_blank" rel="noopener noreferrer">The Empire Writes Back: Theory and Practice in Post-Colonial Literatures, 2nd ed. (Bill Ashcroft, Gareth Griffiths, Helen Tiffin, Routledge)</a> - The seminal theoretical monograph on how postcolonial literatures dismantle imperial narratives; use it as a conceptual companion to Chattopadhyay's lecture course.</p>
+<p><a href="https://ocw.mit.edu/courses/21l-709-studies-in-literary-history-modernism-from-nietzsche-to-fellini-fall-2010" target="_blank" rel="noopener noreferrer">Studies in Literary History: Modernism: From Nietzsche to Fellini (MIT OpenCourseWare)</a> - An interdisciplinary seminar syllabus offering comparative reading and viewing schedules that connect modernist literature, European philosophy, and cinematic form.</p>
+    </article>
+  </main>
+
+</body>
+</html>
